@@ -1,3 +1,143 @@
 .header {
 	background-color: $main-bg;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	height: $header-height;
+	transition: height 0.3s ease 0s;
+
+	.container {
+		height: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1140px;
+		@include flex(center, space-between);
+	}
+
+	&__logo {
+		inset: 0;
+		pointer-events: none;
+		margin-right: 50px;
+
+		img {
+			height: 46px;
+		}
+	}
+
+	&__menu {
+		@include flex(center, space-around);
+		height: 100%;
+		color: $txt-main-color;
+		margin-left: 200px;
+
+		&__item ~ &__item {
+			margin-left: 20px;
+		}
+
+		&__item {
+			text-transform: uppercase;
+			font-size: 1.5rem;
+			font-weight: 600;
+			transition: color 0.2s ease 0s;
+			height: $header-height;
+			margin-top: 100px;
+			min-width: 130px;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+
+	&__search {
+		&__item {
+			font-size: 1.5rem;
+			color: $txt-main-color;
+			cursor: pointer;
+			transition: color 0.2s ease 0s;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+
+	&__bikes {
+		width: 100%;
+		max-height: 400px;
+		background-color: $main-bg;
+		padding-bottom: 5rem;
+		z-index: 1;
+		transform: translateY(-140%);
+		transition: transform 0.5s ease 0s;
+
+		&.hidden {
+			transform: translateY(-1%);
+		}
+
+		&__content {
+			@include flex(flex-start, flex-start);
+
+			&__list {
+				width: 40%;
+				color: $txt-main-color;
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin-left: 260px;
+				border-right: 2px solid $main-second-color;
+
+				&__item ~ &__item {
+					margin-top: 12px;
+				}
+
+				&__item {
+					padding: 8px;
+					transition: color 0.2s ease 0s;
+				}
+			}
+			&__info {
+				@include flex(flex-start, flex-start);
+				width: 60%;
+				color: $txt-main-color;
+				margin-left: 60px;
+
+				&__left {
+					width: 50%;
+					font-size: 1.1rem;
+					font-weight: 500;
+
+					&__item ~ &__item {
+						margin-top: 20px;
+					}
+
+					&__item {
+						cursor: pointer;
+						transition: color 0.2s ease 0s;
+					}
+
+					&__item:hover {
+						color: $main-color;
+					}
+				}
+
+				&__right {
+					width: 50%;
+					margin-left: 20px;
+
+					img {
+						margin-bottom: 20px;
+						border-radius: 3px;
+					}
+
+					span {
+						font-size: 14px;
+						color: $txt-second-color;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
 }
