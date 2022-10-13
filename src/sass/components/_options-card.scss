@@ -1,0 +1,73 @@
+.options-card {
+	text-align: center;
+	margin-bottom: 30px;
+
+	&__detail {
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 54px;
+		background-color: #000000;
+
+		img {
+			background-size: cover;
+			width: 100%;
+			height: 342px;
+			transform: scale(1);
+			transition: transform 0.3s ease;
+		}
+
+		&:hover img {
+			filter: brightness(0.6);
+		}
+
+		&__title {
+			position: absolute;
+			left: 0;
+			bottom: 18px;
+			color: $txt-main-color;
+			font-size: 1.75rem;
+			font-weight: bold;
+			width: 100%;
+			transition: all 0.3s ease;
+			z-index: 1;
+		}
+
+		&:hover &__title {
+			font-size: 3rem;
+			bottom: 80%;
+		}
+
+		&__info {
+			position: absolute;
+			top: 80%;
+			color: $txt-main-color;
+			height: 342px;
+			width: 100%;
+			display: none;
+			transition: all 0.3s ease;
+			margin-top: 0px;
+			transition: all 0.2s ease;
+
+			&__description {
+				font-size: 17px;
+				width: 200px;
+				margin: 0 auto;
+				font-family: 'M PLUS Rounded 1c', serif;
+				font-weight: 500;
+				margin-bottom: 20px;
+
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 6; /* number of lines to show */
+				line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+		}
+
+		&:hover &__info {
+			display: block;
+			top: 30%;
+		}
+	}
+}

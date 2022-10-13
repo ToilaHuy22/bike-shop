@@ -21,7 +21,7 @@ const Routes = () => {
 			<Route path="/junior" component={Junior} />
 			<Route path="/mtp" component={Mtp} />
 			<Route path="/road" component={Road} />
-			<Route path="/Urban" component={Urban} />
+			<Route path="/urban" component={Urban} />
 		</Switch>
 	);
 };

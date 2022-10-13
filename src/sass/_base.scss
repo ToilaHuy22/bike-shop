@@ -89,6 +89,7 @@ img {
 	margin-top: $header-height;
 	margin-bottom: 2rem;
 	min-height: 100vh;
+	background-color: $main-second-color;
 
 	@include tablet {
 		margin-top: calc(#{$header-tablet-height} + 20px);
