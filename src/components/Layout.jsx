@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from './Header';
 import Footer from './Footer';
+import CopyRight from './CopyRight';
 
 import Routes from '../routes/Routes';
 
@@ -20,6 +21,7 @@ const Layout = () => {
 							</div>
 						</div>
 						<Footer />
+						<CopyRight />
 					</div>
 				)}
 			/>

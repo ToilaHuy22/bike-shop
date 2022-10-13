@@ -9,6 +9,10 @@
 	overflow: hidden;
 	position: relative;
 
+	&:hover {
+		filter: brightness(0.9);
+	}
+
 	&__txt,
 	&__icon {
 		display: block;
@@ -36,6 +40,14 @@
 
 	&-animate:hover &__icon {
 		transform: translateX(0);
+	}
+
+	&-sm {
+		font-size: 1.2rem;
+	}
+
+	&-sm &-txt {
+		padding: 0.75rem 1rem;
 	}
 
 	&-md {

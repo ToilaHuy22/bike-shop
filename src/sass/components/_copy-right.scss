@@ -1,0 +1,14 @@
+.copy-right {
+	background-color: $main-bg;
+	color: $txt-main-color;
+	padding: 20px;
+	text-align: center;
+
+	a {
+		font-weight: 600;
+		cursor: pointer;
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
