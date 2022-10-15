@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import logo from '../assets/images/logo-white.png';
 import mt from '../assets/images/bikes-info/DurtJump.jpg';

@@ -4,7 +4,7 @@ import productMtbData from '../assets/fake-data/products/mtb-products';
 import classifyMtb from '../assets/fake-data/classify/classifyMtb';
 
 import Helmet from '../components/Helmet';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import Slider from '../components/Slider';
 import SectionProduct, { SectionTitle, SectionBody } from '../components/SectionProduct';
 import Grid from '../components/Grid';
