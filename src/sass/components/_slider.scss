@@ -1,9 +1,9 @@
 .hero-slider {
-	height: 100vh;
+	// height: 100vh;
 	max-height: 1080px;
 	overflow: hidden;
 
-	margin-bottom: 50px;
+	// margin-bottom: 50px;
 	width: unset;
 
 	&__item {
@@ -17,7 +17,7 @@
 		}
 
 		&__info {
-			@include flex(center, space-between);
+			@include flex(center, flex-start);
 			gap: 50px;
 
 			&__description {
@@ -26,6 +26,13 @@
 				font-size: 1.5rem;
 				font-family: 'M PLUS Rounded 1c', serif;
 				font-weight: 500;
+
+				@include tablet {
+					width: 100%;
+					left: 5%;
+					right: 5%;
+					padding: 0 20px;
+				}
 			}
 
 			&__title {
@@ -36,6 +43,10 @@
 				font-weight: normal;
 				font-style: italic;
 				font-family: 'M PLUS Rounded 1c', serif;
+
+				@include tablet {
+					display: none;
+				}
 
 				i {
 					margin-left: 10px;
@@ -52,8 +63,12 @@
 			&__description,
 			&__title {
 				position: absolute;
-				top: 99%;
+				bottom: 40px;
 				color: $txt-main-color;
+
+				@include tablet {
+					top: 35%;
+				}
 			}
 		}
 	}

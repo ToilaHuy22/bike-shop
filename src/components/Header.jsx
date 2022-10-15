@@ -65,8 +65,23 @@ const Header = () => {
 		setIsHovering(true);
 	};
 
+	const headerRef = useRef(null);
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				headerRef.current.classList.add('shrink');
+			} else {
+				headerRef.current.classList.remove('shrink');
+			}
+		});
+		return () => {
+			window.removeEventListener('scroll');
+		};
+	}, []);
+
 	return (
-		<div className="header">
+		<div className="header" ref={headerRef}>
 			<div className="container">
 				<div className="header__logo">
 					<Link to="/">
@@ -106,7 +121,7 @@ const Header = () => {
 				</div>
 				<div className="header__search">
 					<div className="header__search__item">
-						<i class="bx bx-search-alt-2"></i>
+						<i className="bx bx-search-alt-2"></i>
 					</div>
 				</div>
 			</div>

@@ -33,7 +33,8 @@ const slider = [
 const products = [
 	{
 		title: 'siskiu n',
-		option: 'n9',
+		option: ['n9 |'],
+		classify: ['eu'],
 		// categorySLug:'siskiu'
 		slug: 'siskiu-n',
 		image01: product_01_image_01,
@@ -42,7 +43,8 @@ const products = [
 	},
 	{
 		title: 'siskiu t',
-		option: ['t8', 't7'],
+		option: ['t8 |', ' t7'],
+		classify: ['t'],
 		// categorySLug:'siskiu'
 		slug: 'siskiu-t',
 		image01: product_02_image_01,
@@ -51,7 +53,8 @@ const products = [
 	},
 	{
 		title: 'siskiu d',
-		option: ['dse', 'd7', 'd6', 'd5'],
+		option: ['dse |', ' d7 |', ' d6 |', ' d5'],
+		classify: ['cc', 't'],
 		// categorySLug:'siskiu'
 		slug: 'siskiu-d',
 		image01: product_03_image_01,
@@ -60,7 +63,8 @@ const products = [
 	},
 	{
 		title: 'syncline c',
-		option: ['c5', 'c3', 'c2'],
+		option: ['c5 |', ' c3 |', ' c2'],
+		classify: ['cc'],
 		// categorySLug:'siskiu'
 		slug: 'siskiu-n',
 		image01: product_04_image_01,
@@ -69,7 +73,8 @@ const products = [
 	},
 	{
 		title: 'xtrada',
-		option: ['7', '6', '5', 'jr 24'],
+		option: ['7 |', ' 6 |', ' 5 |', ' jr 24'],
+		classify: ['cc'],
 		// categorySLug:'siskiu'
 		slug: 'xtrada',
 		image01: product_05_image_01,
@@ -78,7 +83,8 @@ const products = [
 	},
 	{
 		title: 'premier',
-		option: ['5', '4'],
+		option: ['5 |', ' 4'],
+		classify: ['ls'],
 		// categorySLug:'siskiu'
 		slug: 'premier',
 		image01: product_06_image_01,
@@ -87,7 +93,8 @@ const products = [
 	},
 	{
 		title: 'cascade',
-		option: ['4', '3', '2'],
+		option: ['4 |', ' 3 |', ' 2'],
+		classify: ['ls'],
 		// categorySLug:'siskiu'
 		slug: 'cascade',
 		image01: product_07_image_01,

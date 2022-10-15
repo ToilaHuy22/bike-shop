@@ -103,8 +103,8 @@ const Footer = () => {
 							<div className="footer__content__socials">
 								<span>find us on socials media</span>
 								<div className="footer__content__socials__icon">
-									<i class="bx bxl-instagram"></i>
-									<i class="bx bxl-facebook"></i>
+									<i className="bx bxl-instagram"></i>
+									<i className="bx bxl-facebook"></i>
 								</div>
 							</div>
 						</div>

@@ -19,7 +19,7 @@ const Slider = (props) => {
 						</div>
 						<div className="hero-slider__item__info__title">
 							{item.title}
-							<i class="bx bx-chevron-down"></i>
+							<i className="bx bx-chevron-down"></i>
 						</div>
 					</div>
 				</div>
@@ -29,7 +29,7 @@ const Slider = (props) => {
 };
 
 Slider.propTypes = {
-	data: PropTypes.array.isRequired,
+	data: PropTypes.object,
 };
 
 export default Slider;
